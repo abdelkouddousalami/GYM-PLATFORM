@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Videos - GymBro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">GymBro</h1>
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline text-green-400">Home</a></li>
+                    <li><a href="workout-videos.html" class="hover:underline text-green-400">Workout Videos</a></li>
+                    <li><a href="fitness-programs.html" class="hover:underline text-green-400">Fitness Programs</a></li>
+                    <li><a href="calorie-calculator.html" class="hover:underline text-green-400">Calorie Calculator</a></li>
+                    <li><a href="user-dashboard.html" class="hover:underline text-green-400">User Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">Workout Videos</h2>
+            <p class="text-gray-600 mt-4">Browse our curated collection of workout videos, with filters for difficulty, muscle groups, and goals.</p>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="mb-12">
+            <h3 class="text-xl font-bold text-green-400 mb-6">Filter Your Search</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Difficulty Filter -->
+                <div class="bg-white rounded-lg shadow-md p-6 w-80">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Difficulty</h4>
+                    <select class="w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <!-- Muscle Group Filter -->
+                <div class="bg-white rounded-lg shadow-md p-6 w-80">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Target Muscle Group</h4>
+                    <select class="w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="upper-body">Upper Body</option>
+                        <option value="lower-body">Lower Body</option>
+                        <option value="full-body">Full Body</option>
+                        <option value="core">Core</option>
+                    </select>
+                </div>
+
+                <!-- Goal Filter -->
+                <div class="bg-white rounded-lg shadow-md p-6 w-80">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Fitness Goal</h4>
+                    <select class="w-full p-2 border border-gray-300 rounded-lg">
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="muscle-gain">Muscle Gain</option>
+                        <option value="maintain">Maintain</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workout Videos List -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Video Item -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Full Body Workout</h3>
+                <p class="text-gray-600 mb-4">A great full-body workout for all levels. Perfect for building strength and endurance.</p>
+                <a href="workout-video-details.html" class="text-green-400 hover:underline">Watch Now</a>
+            </div>
+
+            <!-- Video Item -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Upper Body Strength</h3>
+                <p class="text-gray-600 mb-4">Focus on building upper body strength with this targeted workout routine.</p>
+                <a href="workout-video-details.html" class="text-green-400 hover:underline">Watch Now</a>
+            </div>
+
+            <!-- Video Item -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Core Training</h3>
+                <p class="text-gray-600 mb-4">Strengthen your core muscles with these effective exercises.</p>
+                <a href="workout-video-details.html" class="text-green-400 hover:underline">Watch Now</a>
+            </div>
+
+            <!-- Video Item -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Leg Day</h3>
+                <p class="text-gray-600 mb-4">Intense lower body workout to sculpt and strengthen your legs.</p>
+                <a href="workout-video-details.html" class="text-green-400 hover:underline">Watch Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 GymBro. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

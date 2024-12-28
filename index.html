@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBro - Your Digital Gym Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add this CSS to support dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a202c;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans transition-colors duration-300" id="body">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold text-green-400">GymBro</h1>
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline text-green-400">Home</a></li>
+                    <li><a href="workout-videos.html" class="hover:underline text-green-400">Workout Videos</a></li>
+                    <li><a href="fitness-programs.html" class="hover:underline text-green-400">Fitness Programs</a></li>
+                    <li><a href="calorie-calculator.html" class="hover:underline text-green-400">Calorie Calculator</a></li>
+                    <li><a href="user-dashboard.html" class="hover:underline text-green-400">User Dashboard</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Hamburger Icon -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Dark Mode Toggle Button -->
+            <button id="dark-mode-toggle" class="text-white focus:outline-none">
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v3m0 12v3m-9-9h3m12 0h3M4.22 4.22l1.42 1.42m12.02 12.02l1.42 1.42M4.22 19.78l1.42-1.42m12.02-12.02l1.42-1.42M12 9a3 3 0 110 6 3 3 0 010-6z">
+                    </path>
+                </svg>
+                <svg id="moon-icon" class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v3m0 12v3m-9-9h3m12 0h3M4.22 4.22l1.42 1.42m12.02 12.02l1.42 1.42M4.22 19.78l1.42-1.42m12.02-12.02l1.42-1.42M12 9a3 3 0 110 6 3 3 0 010-6z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Introduction -->
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white">Achieve Your Fitness Goals</h2>
+            <p class="text-gray-300 mt-4">GymBro combines expert workout plans, personalized tools, and a sleek design
+                to empower your fitness journey.</p>
+        </section>
+
+        <!-- Core Features -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Workout Videos -->
+            
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-green-400 mb-2">Workout Videos</h3>
+                    <p class="text-gray-400">Curated library with filters for difficulty, target muscle groups, and
+                        goals.</p>
+                    <a href="workout-videos.html" class="text-green-400 hover:underline">Learn More</a>
+                </div>
+            
+
+            <!-- Customized Fitness Programs -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-green-400 mb-2">Customized Fitness Programs</h3>
+                <p class="text-gray-400">Structured plans with weekly schedules and workout descriptions.</p>
+                <a href="fitness-programs.html" class="text-green-400 hover:underline">Learn More</a>
+            </div>
+
+            <!-- Calorie Calculator -->
+            
+                <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-green-400 mb-2">Calorie Calculator</h3>
+                    <p class="text-gray-400">Estimate your daily caloric needs for weight loss or muscle gain.</p>
+                    <a href="calories.html" class="text-green-400 hover:underline">Calcul it !</a>
+                </div>
+            
+
+            <!-- User Dashboard -->
+            <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-green-400 mb-2">User Dashboard</h3>
+                <p class="text-gray-400">Track progress, save workouts, and log daily meals.</p>
+                <a href="user-dashboard.html" class="text-green-400 hover:underline">Learn More</a>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 GymBro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 z-50 hidden">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-white text-3xl">&times;</button>
+        </div>
+        <div class="flex justify-center items-center h-full">
+            <ul class="space-y-6 text-white text-xl">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="workout-videos.html" class="hover:underline">Workout Videos</a></li>
+                <li><a href="fitness-programs.html" class="hover:underline">Fitness Programs</a></li>
+                <li><a href="calorie-calculator.html" class="hover:underline">Calorie Calculator</a></li>
+                <li><a href="user-dashboard.html" class="hover:underline">User Dashboard</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+
+        // Close mobile menu
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+        // Toggle Dark/Light Mode
+        const body = document.getElementById('body');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+        // Check localStorage for theme
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+
+        darkModeToggle.addEventListener('click', function () {
+            // Toggle dark mode
+            document.documentElement.classList.toggle('dark');
+
+            // Toggle icons
+            sunIcon.classList.toggle('hidden');
+            moonIcon.classList.toggle('hidden');
+
+            // Save theme to localStorage
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+
+</html>
