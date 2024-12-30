@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Videos - GymBro</title>
+    <title>Fitness Programs - GymBro</title>
     <link rel="website icon" type="png" href="img/gym.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="workout.css">
+    <link rel="stylesheet" href="programme.css">
 </head>
 <body class="bg-light text-primary font-sans transition-colors duration-300 light-mode" id="body">
 
@@ -41,79 +41,43 @@
     <!-- Main Section -->
     <main class="container mx-auto px-4 py-8">
         <section class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-primary">Workout Videos</h2>
-            <p class="text-secondary mt-4">Browse our curated collection of workout videos, with filters for difficulty, muscle groups, and goals.</p>
+            <h2 class="text-3xl font-bold text-primary">Fitness Programs</h2>
+            <p class="text-secondary mt-4">Explore our fitness programs designed for every goal, from weight loss to muscle building.</p>
         </section>
 
-        <!-- Filters Section -->
-        <section class="mb-12">
-            <h3 class="text-xl font-bold text-secondary mb-6">Filter Your Search</h3>
-            <div class="flex flex-wrap justify-center gap-4">
-                <!-- Difficulty Filter -->
-                <div class="bg-light rounded-lg shadow-md p-6 w-80">
-                    <h4 class="text-lg font-semibold text-primary mb-2">Difficulty</h4>
-                    <select class="w-full p-2 border border-primary rounded-lg">
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
-                    </select>
-                </div>
-
-                <!-- Muscle Group Filter -->
-                <div class="bg-light rounded-lg shadow-md p-6 w-80">
-                    <h4 class="text-lg font-semibold text-primary mb-2">Target Muscle Group</h4>
-                    <select class="w-full p-2 border border-primary rounded-lg">
-                        <option value="upper-body">Upper Body</option>
-                        <option value="lower-body">Lower Body</option>
-                        <option value="full-body">Full Body</option>
-                        <option value="core">Core</option>
-                    </select>
-                </div>
-
-                <!-- Goal Filter -->
-                <div class="bg-light rounded-lg shadow-md p-6 w-80">
-                    <h4 class="text-lg font-semibold text-primary mb-2">Fitness Goal</h4>
-                    <select class="w-full p-2 border border-primary rounded-lg">
-                        <option value="weight-loss">Weight Loss</option>
-                        <option value="muscle-gain">Muscle Gain</option>
-                        <option value="maintain">Maintain</option>
-                    </select>
-                </div>
-            </div>
-        </section>
-
-        <!-- Workout Videos List -->
-        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <!-- Video Item -->
+        <!-- Fitness Programs List -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Program Item -->
             <div class="bg-light rounded-lg shadow-md p-6">
-                <h3 class="text-xl font-bold text-accent mb-2">Full Body Workout</h3>
-                <p class="text-primary mb-4">A great full-body workout for all levels. Perfect for building strength and endurance.</p>
-                <a href="workout-video-details.html" class="text-accent hover:underline">Watch Now</a>
+                <h3 class="text-xl font-bold text-accent mb-2">Beginner Weight Loss Program</h3>
+                <p class="text-primary mb-4">A 4-week program designed to help beginners shed weight and build healthy habits.</p>
+                <a href="program-details.html" class="text-accent hover:underline">Learn More</a>
             </div>
 
-            <!-- Video Item -->
+            <!-- Program Item -->
             <div class="bg-light rounded-lg shadow-md p-6">
-                <h3 class="text-xl font-bold text-accent mb-2">Upper Body Strength</h3>
-                <p class="text-primary mb-4">Focus on building upper body strength with this targeted workout routine.</p>
-                <a href="workout-video-details.html" class="text-accent hover:underline">Watch Now</a>
+                <h3 class="text-xl font-bold text-accent mb-2">Muscle Building Program</h3>
+                <p class="text-primary mb-4">Targeted strength training routines to help you gain muscle effectively.</p>
+                <a href="program-details.html" class="text-accent hover:underline">Learn More</a>
             </div>
 
-            <!-- Video Item -->
+            <!-- Program Item -->
             <div class="bg-light rounded-lg shadow-md p-6">
-                <h3 class="text-xl font-bold text-accent mb-2">Core Training</h3>
-                <p class="text-primary mb-4">Strengthen your core muscles with these effective exercises.</p>
-                <a href="workout-video-details.html" class="text-accent hover:underline">Watch Now</a>
+                <h3 class="text-xl font-bold text-accent mb-2">Advanced HIIT Program</h3>
+                <p class="text-primary mb-4">High-intensity interval training for advanced fitness enthusiasts.</p>
+                <a href="program-details.html" class="text-accent hover:underline">Learn More</a>
             </div>
 
-            <!-- Video Item -->
+            <!-- Program Item -->
             <div class="bg-light rounded-lg shadow-md p-6">
-                <h3 class="text-xl font-bold text-accent mb-2">Leg Day</h3>
-                <p class="text-primary mb-4">Intense lower body workout to sculpt and strengthen your legs.</p>
-                <a href="workout-video-details.html" class="text-accent hover:underline">Watch Now</a>
+                <h3 class="text-xl font-bold text-accent mb-2">Core Strength Program</h3>
+                <p class="text-primary mb-4">Focused on building a strong core and improving posture.</p>
+                <a href="program-details.html" class="text-accent hover:underline">Learn More</a>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-primary text-white py-4">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 GymBro. All rights reserved.</p>
@@ -138,5 +102,5 @@
             menu.classList.toggle('hidden');
         });
     </script>
-</body>
-</html>
+    </body>
+    </html>

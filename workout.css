@@ -1,0 +1,59 @@
+:root {
+    --text-light: #2b2b2b;
+    --background-light: #ffffff;
+    --primary-light: #575757;
+    --secondary-light: #99cd32;
+    --accent-light: #80ff00;
+
+    --text-dark: #d4d4d4;
+    --background-dark: #000000;
+    --primary-dark: #a8a8a8;
+    --secondary-dark: #99cd32;
+    --accent-dark: #80ff00;
+}
+
+/* Light Mode */
+.light-mode {
+    --text-color: var(--text-light);
+    --background-color: var(--background-light);
+    --primary-color: var(--primary-light);
+    --secondary-color: var(--secondary-light);
+    --accent-color: var(--accent-light);
+}
+
+/* Dark Mode */
+.dark-mode {
+    --text-color: var(--text-dark);
+    --background-color: var(--background-dark);
+    --primary-color: var(--primary-dark);
+    --secondary-color: var(--secondary-dark);
+    --accent-color: var(--accent-dark);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.hover\:text-accent:hover {
+    color: var(--accent-color);
+}
